@@ -1,0 +1,76 @@
+<div class="main-container">
+    <div class="left">
+        <div class="left-div ">
+
+            <div class="smudge"></div>
+            <span class="lean">
+                <b class="bold">Digital</b> Platform <br>
+                for distance <b class="bold">
+                    learning.</b>
+                    
+            </span>
+         
+            <p style="font-size: small; color: grey;">Internet and online based digital technologies such as desktop,<br>
+                computers, mobile phone and others. </p>
+
+                <i class="comment fas fa-comments fa-lg" ></i>
+        </div>
+    
+    </div>
+   
+ 
+    <div class="right-div">
+<div class="credentials">
+    <div class="center logo">
+        <h3 >
+            <span style="color: red;" >your </span> Logo <span class="reg-circle">&reg;</span>
+        </h3>
+      
+    </div>
+  
+    <div class="center">
+        <span class="circle">
+
+            <i class="far fa-user fa-lg" style="color: #e0381a;"></i>
+        </span>
+    </div>
+   
+   <div class="center ">
+    
+    <h2>Welcome back</h2>
+   </div>
+   
+    <form ng-submit="login()">
+        <div class="input-container">
+            <i class="fas fa-user input-icon" style="color: grey;"></i>
+            <input type="text" placeholder="Username" ng-model="username" ng-change="clearErrorMessage()" required>
+          </div>
+          
+          <div style="margin-bottom: 0;"  class="input-container ">
+            <i class="fas fa-lock input-icon" style="color: #828282;"></i>
+           <input type="password"  placeholder="Password" id="password" ng-model="password" ng-change="clearErrorMessage()" required>
+            <span class="green-tick" ng-show="isPasswordValid">&#10004;</span>
+        
+        </div>
+<span style="float: right;">
+    <h6 style="font-size :12px ; color: grey;">Forget Password? </h6>
+</span>
+       
+      <button type="submit">Login</button>
+    
+    </form>
+    <span style="display: flex; margin-top:10px">
+        <span ng-show="errorMessage" class="errorMessage">
+            <i style="color: red;" class="fas fa-exclamation-triangle"> </i> 
+            <span style="font-weight: bold;">{{errorMessage}}</span></span>
+
+    </span>
+    <div class="center">
+        <p class="signup">Don't have an account ?<b style="color: black;"> Sign up</b></p>
+      </div>
+</div>
+     
+    </div>
+    
+  </div>
+  

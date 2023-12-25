@@ -1,0 +1,24 @@
+<!-- table.html -->
+<div class="navbar ">
+        <span >
+            <span style="color: red;" >your </span> <span style="color: black;">Logo</span> <span style="color: black;" class="reg-circle">&reg;</span>
+        </h3>
+      
+  
+  </div>
+<div class="container">
+  <h2>Table of Records</h2>
+  <table id="data-table" class="zoomed-out-table">
+    <tr>
+      <th></th> <!-- Empty cell for the checkbox column -->
+      <th ng-repeat="(key, value) in tableData[0]" ng-click="sortTable(key)">{{key}}</th>
+      <th>Action</th>
+    </tr>
+    <tr ng-repeat="row in tableData" draggable="true" ng-dragstart="dragStart($event)">
+      <td><input type="checkbox" ng-model="row.selected"></td>
+      <td ng-repeat="value in row">{{value}}</td>
+      <td><button ng-click="deleteRow(row.id)">Delete</button></td>
+    </tr>
+  </table>
+</div>
+
