@@ -1,5 +1,5 @@
 # koru_angularJS_landingpage
-# AngularJS Single-Page Application
+
 
 ## Overview
 This repository contains the code for a single-page application developed using AngularJS. The application includes a login page with responsiveness and validation features. Additionally, it aims to display a table of records from a 'data.json' file, allowing users to interact with the data through sorting, deletion, and drag-and-drop functionalities.
